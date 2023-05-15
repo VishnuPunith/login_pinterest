@@ -22,8 +22,20 @@
     
      <button type="submit">Log in</button>
      <h6 class="para">OR</h6>
-     <img src="https://i.stack.imgur.com/oL5c2.png" class="facebook">
-     <img src="../src/assets/vprgoogle.png" class="google">
+     <button class="continue-with-facebook">
+      <img class ="image" src="../src/assets/5a22b43e909176.0984090415122238065922.png" alt="">
+        <span class="icon"><i class="fa fa-google"></i></span>
+        Continue with Facebook
+      </button>
+     <!-- <img src="../src/assets/vprgoogle.png" class="google"> -->
+     <button class="continue-with-google">
+      <img class ="image" src="../src/assets/5a35540277d9e6.8445514415134443544909.png" alt="">
+        <span class="icon"><i class="fa fa-google"></i></span>
+        Continue with Google
+      </button>
+      <p class="paragraph">By continuing, you agree to Pinterest'<br>
+        <a href="https://v-learning.in/terms/">Terms and condition</a> Opens a new tab and acknowledge you've read our<br>
+        <a href="https://v-learning.in/terms/">Privacy Policy;</a> Opens a new tab.</p>
     </form>
   </div>  
 </template>
@@ -63,9 +75,65 @@
   align-items: center;
   height: 100vh;
 }
-.google{
-  
+.paragraph {
+    font-size: 11px;
+    letter-spacing: -1px;
 }
+.continue-with-google {
+    display: inline-block;
+    background-color: #e2e4e9;
+    color: #171962;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 27px;
+    border: none;
+    border-radius: 25px;
+    border-color: black;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 2px;
+    margin-top: 21px;
+}
+.continue-with-facebook {
+    display: inline-block;
+    background-color: #e2e4e9;
+    color: #171962;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 25px;
+    border-color: black;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    margin-left: 2px;
+    position: absolute;
+    margin-top: -22px;
+}
+
+.continue-with-google:hover {
+  background-color: #357AE8;
+}
+.continue-with-facebook:hover {
+  background-color: #357AE8;
+}
+.icon {
+  display: inline-block;
+  font-size: 20px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.fa-google {
+  color: #ffffff;
+}
+.image{
+  width: 12px;
+}
+
+
 .logo {
     width: 2pc;
     margin-top: -87px;
@@ -77,7 +145,7 @@ form {
     min-height: 396px;
     padding: 127px 10px 1px;
     background-color: #ffffff;
-    border-radius: 37px;
+    border-radius: 15px;
     margin-top: 23px;
     margin-left: 29pc;
 }
@@ -123,8 +191,8 @@ input[type="passwordConfirm"]
 {
   width: 55%;
   padding: 9px;
-  font-size: 16px;
-  border-radius: 15px;
+  font-size: 14px;
+  border-radius: 8px;
   font-style: Poppins;
   border: 1px solid lightgray;
   margin: 0;
