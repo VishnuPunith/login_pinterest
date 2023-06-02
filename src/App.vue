@@ -60,6 +60,23 @@ padding: 25px;
 color: #a76969;
 
 }
+@media (min-width: 361px) and (max-width: 480px){
+#app {
+    background-color: #4574a3;
+    background-image: url(http://localhost:8080/img/festive-christmas-arrangement-with-copy-space.037752cb.jpg);
+    max-width: 146%;
+    height: 223%;
+    background-size: cover;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    margin-top: 6px;
+    padding: 304px;
+    color: #a76969;
+    position: absolute;
+}
+}
 .h1 {
  color: rgb(5, 0, 0);
  font-size: 31px;
@@ -173,6 +190,16 @@ form {
  margin-top: 23px;
  margin-left: 29pc;
 }
+@media (min-width: 361px) and (max-width: 480px){
+form {
+    width: 395px;
+    min-height: 396px;
+    padding: 127px 10px 18px;
+    background-color: #d1b2b2;
+    border-radius: 15px;
+    margin-top: 20pc;
+    margin-left: 0pc;
+}}
 .link {
  margin-left: -6pc;
  font-size: 11px;
